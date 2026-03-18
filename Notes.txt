@@ -1,0 +1,19 @@
+- Data is Fully-clean "No Zeros".
+- The Data Acts like SQL Database where IDs connect the tables.
+
+1. Employee.csv
+	- Size : 1,470 rows (Employees) × 23 columns.
+	- Contains the core job-related, and compensation data for each employee. 
+
+2. PerformanceRating.csv
+	- Size: 6,709 rows (Reviews) × 11 columns.
+	- Contains Historical Performance review records
+
+3. Lookup Tables (Reference Data)
+	- EducationLevel.csv, RatingLevel.csv, SatisfiedLevel.csv These 3 Files Act as Dictionaries to Help Translate the Numerical scores in the Main Datasets into Readable text.
+
+
+4. The Actual Relationship "Nature" of the Data 
+	- Employee.csv <--> PerformanceRating.csv (one-to-many)
+	- PerformanceRating.csv <--> RatingLevel.csv (one-to-many)
+	- PerformanceRating.csv <--> SatisfiedLevel.csv (one-to-many)
